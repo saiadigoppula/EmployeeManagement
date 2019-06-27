@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="u_department" table="x_279645_employeem_help_desk" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_department</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>HR</label>
+            <language>en</language>
+            <name>x_279645_employeem_help_desk</name>
+            <sequence>0</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-06-12 06:19:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fdfd93684f02b700acdff82ca310c78f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-06-12 06:19:37</sys_updated_on>
+            <value>hr</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_department</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>MIS</label>
+            <language>en</language>
+            <name>x_279645_employeem_help_desk</name>
+            <sequence>1</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-06-12 06:19:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>31fd93684f02b700acdff82ca310c791</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-06-12 06:19:37</sys_updated_on>
+            <value>mis</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_department</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>FINANCE</label>
+            <language>en</language>
+            <name>x_279645_employeem_help_desk</name>
+            <sequence>2</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-06-12 06:19:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bdfd93684f02b700acdff82ca310c791</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-06-12 06:19:37</sys_updated_on>
+            <value>finance</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_department</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>QA</label>
+            <language>en</language>
+            <name>x_279645_employeem_help_desk</name>
+            <sequence>3</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-06-12 06:19:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3dfd93684f02b700acdff82ca310c792</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-06-12 06:19:37</sys_updated_on>
+            <value>qa</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_department</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>SYSADMIN</label>
+            <language>en</language>
+            <name>x_279645_employeem_help_desk</name>
+            <sequence>4</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-06-12 06:19:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b9fd93684f02b700acdff82ca310c793</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-06-12 06:19:37</sys_updated_on>
+            <value>sysadmin</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>u_department</element>
+            <name>x_279645_employeem_help_desk</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-06-12 06:19:37</sys_created_on>
+            <sys_id>39fd93684f02b700acdff82ca310c790</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_department</sys_name>
+            <sys_package display_value="EmployeeManagement" source="x_279645_employeem">24a4e0804f863700acdff82ca310c7cc</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="EmployeeManagement">24a4e0804f863700acdff82ca310c7cc</sys_scope>
+            <sys_update_name>sys_choice_x_279645_employeem_help_desk_u_department</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-06-12 06:19:37</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

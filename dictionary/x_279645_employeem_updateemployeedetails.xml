@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="UpdateEmployeeDetails" max_length="40" name="x_279645_employeem_updateemployeedetails" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="DateOfBirth" max_length="40" name="u_dateofbirth" read_only="true" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="DateOfJoining" max_length="40" name="u_dateofjoining" read_only="true" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Email" max_length="40" name="u_email" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="EmployeeFullName" max_length="40" name="u_employeefullname" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="EmployeeID" max_length="40" name="u_employeeid" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Gender" max_length="40" name="u_gender" read_only="true" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Male" sequence="0" value="male"/>
+                <element inactive_on_update="false" label="Femail" sequence="1" value="femail"/>
+                <element inactive_on_update="false" label="Other" sequence="2" value="other"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="PhoneNumber" max_length="10" name="u_phonenumber" type="string"/>
+    </element>
+</database>

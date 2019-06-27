@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>u_department</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>DepartmentScript</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+		if ( newValue == '') {
+			return;
+		}
+		
+		var Request = g_form.getValue('u_requestedtype');
+		
+		// Clear all of the choices from the What needed field choice list
+		g_form.clearOptions('u_requestedtype');
+		
+		// If the the value of the Request type field is hr, add
+		// two hr choices and other to the What needed field choice list
+		if(newValue == 'hr'){
+			g_form.addOption('u_requestedtype','certificates','certificates');
+			g_form.addOption('u_requestedtype','gruoup_medical_insurence','Gruoup medical insurence');
+			g_form.addOption('u_requestedtype','others','Others');
+		}
+		// If the the value of the Request type field is facilities, add
+		// two facilities choices and other to the What needed field
+		// choice list
+		if(newValue == 'mis'){
+			g_form.addOption('u_requestedtype','lms','LMS');
+			g_form.addOption('u_requestedtype','sales','sales');
+			g_form.addOption('u_requestedtype','marketing','Marketing');
+			g_form.addOption('u_requestedtype','other','Other');
+		}
+		
+		if(newValue == 'finance'){
+			g_form.addOption('u_requestedtype','payments','Payments');
+			g_form.addOption('u_requestedtype','travel_payments','Travel Payments');
+			g_form.addOption('u_requestedtype','other','Other');
+		}
+			if(newValue == 'qa'){
+			g_form.addOption('u_requestedtype','reporting','Reporting');
+			g_form.addOption('u_requestedtype','trainings','Trainings');
+			g_form.addOption('u_requestedtype','other','Other');
+		}
+		if(newValue == 'sysadmin'){
+			g_form.addOption('u_requestedtype','hardware','Hardware');
+			g_form.addOption('u_requestedtype','software','Software');
+			g_form.addOption('u_requestedtype','database','Database');
+			g_form.addOption('u_requestedtype','other','Other');
+		}
+		
+		if(isLoading && !g_form.isNewRecord()){
+			g_form.setValue('u_requestedtype', Request);
+		}
+	}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-06-12 06:54:02</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2bdfd7a84f02b700acdff82ca310c79c</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>DepartmentScript</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="EmployeeManagement" source="x_279645_employeem">24a4e0804f863700acdff82ca310c7cc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="EmployeeManagement">24a4e0804f863700acdff82ca310c7cc</sys_scope>
+        <sys_update_name>sys_script_client_2bdfd7a84f02b700acdff82ca310c79c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-06-12 09:12:05</sys_updated_on>
+        <table>x_279645_employeem_help_desk</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_279645_employeem.RequestedBy</api_name>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>RequestedBy</name>
+        <script><![CDATA[var RequestedBy = Class.create(); 
+RequestedBy.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+Replicate: function() { 
+	
+var uid = this.getParameter('sysparm_state'); 
+	
+var inc= new GlideRecord('x_279645_employeem_employeedetails'); 
+	
+inc.addQuery('number',uid);
+inc.query();
+inc.next();
+	
+ return inc.u_employeefullname;
+ 
+ 
+ } ,
+ 
+ });]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-06-12 11:52:41</sys_created_on>
+        <sys_id>fd76a8744fc2b700acdff82ca310c7e6</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>RequestedBy</sys_name>
+        <sys_package display_value="EmployeeManagement" source="x_279645_employeem">24a4e0804f863700acdff82ca310c7cc</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="EmployeeManagement">24a4e0804f863700acdff82ca310c7cc</sys_scope>
+        <sys_update_name>sys_script_include_fd76a8744fc2b700acdff82ca310c7e6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-06-18 04:09:23</sys_updated_on>
+    </sys_script_include>
+</record_update>

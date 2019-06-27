@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="u_choice_4" table="x_279645_employeem_employeedetails" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_choice_4</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Male</label>
+            <language>en</language>
+            <name>x_279645_employeem_employeedetails</name>
+            <sequence>0</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-06-10 03:52:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2a29a4844f863700acdff82ca310c7d0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-06-10 03:52:44</sys_updated_on>
+            <value>male</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_choice_4</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Female</label>
+            <language>en</language>
+            <name>x_279645_employeem_employeedetails</name>
+            <sequence>1</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-06-10 03:52:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6a29a4844f863700acdff82ca310c7d1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-06-10 03:52:44</sys_updated_on>
+            <value>female</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_choice_4</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Other</label>
+            <language>en</language>
+            <name>x_279645_employeem_employeedetails</name>
+            <sequence>2</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-06-10 03:52:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e629a4844f863700acdff82ca310c7d2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-06-10 03:52:44</sys_updated_on>
+            <value>other</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>u_choice_4</element>
+            <name>x_279645_employeem_employeedetails</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-06-10 03:52:44</sys_created_on>
+            <sys_id>6229a4844f863700acdff82ca310c7d1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_choice_4</sys_name>
+            <sys_package display_value="EmployeeManagement" source="x_279645_employeem">24a4e0804f863700acdff82ca310c7cc</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="EmployeeManagement">24a4e0804f863700acdff82ca310c7cc</sys_scope>
+            <sys_update_name>sys_choice_x_279645_employeem_employeedetails_u_choice_4</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-06-10 03:52:44</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

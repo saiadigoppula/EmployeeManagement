@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>u_dateofjoining</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>EmployeeDojScript</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+
+	  var doj = g_form.getValue('u_dateofjoining');
+	var Doj = new Date(doj);
+	
+	var dob = g_form.getValue('u_dateofbirth');
+	var Dob = new Date(dob);
+	
+	var Dobyear = Dob.getYear();
+	var Dojyear = Doj.getYear();
+	var diff = Dojyear-Dobyear;
+	
+	var rightnow = new Date();
+   //gs.addErrorMessage(Dob);
+	var companystartd = new Date("1997-01-01 00:00:00");
+	var to = new Date("1999-01-01 00:00:00");
+	//gs.addErrorMessage(from);
+	//gs.addErrorMessage(to);
+	
+	if(Doj>rightnow||Doj<companystartd||Doj<Dob||diff<=18||diff>=60){	
+		g_form.showFieldMsg('u_dateofjoining','Invalid DateOfJoining','error');
+	}
+	else
+		{
+			g_form.hideFieldMsg('u_dateofjoining',true);
+		}
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-06-17 06:40:43</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2bd099164fc6b300acdff82ca310c714</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>EmployeeDojScript</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="EmployeeManagement" source="x_279645_employeem">24a4e0804f863700acdff82ca310c7cc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="EmployeeManagement">24a4e0804f863700acdff82ca310c7cc</sys_scope>
+        <sys_update_name>sys_script_client_2bd099164fc6b300acdff82ca310c714</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-06-17 08:33:40</sys_updated_on>
+        <table>x_279645_employeem_employeedetails</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

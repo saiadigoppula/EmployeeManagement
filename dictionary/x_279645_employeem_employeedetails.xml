@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="EmployeeDetails" max_length="40" name="x_279645_employeem_employeedetails" type="collection">
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" display="true" label="EmployeeID" max_length="40" name="number" read_only="true" type="string"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element attributes="edge_encryption_enabled=true" label="Address" max_length="200" name="u_address" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="male" label="Gender" mandatory="true" max_length="40" name="u_choice_4" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Male" sequence="0" value="male"/>
+                <element inactive_on_update="false" label="Female" sequence="1" value="female"/>
+                <element inactive_on_update="false" label="Other" sequence="2" value="other"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="DateOfBirth" mandatory="true" max_length="40" name="u_dateofbirth" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="DateOfJoining" mandatory="true" max_length="40" name="u_dateofjoining" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Email" max_length="40" name="u_email" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" dependent="sys_mod_count" dependent_on_field="sys_mod_count" label="EmployeeFullName" mandatory="true" max_length="40" name="u_employeefullname" type="string" use_dependent_field="true"/>
+        <element attributes="edge_encryption_enabled=true" label="PhoneNumber" mandatory="true" max_length="10" name="u_phonenumber" type="string"/>
+        <index name="index">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

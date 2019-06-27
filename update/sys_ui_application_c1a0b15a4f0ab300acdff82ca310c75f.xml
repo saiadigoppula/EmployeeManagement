@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_application">
+    <sys_ui_application action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <hint/>
+        <name>UpdateEmployeeDetails</name>
+        <order/>
+        <roles>x_279645_employeem.updateemployeedetails_user</roles>
+        <sys_class_name>sys_ui_application</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-06-17 08:51:21</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c1a0b15a4f0ab300acdff82ca310c75f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>UpdateEmployeeDetails</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="EmployeeManagement" source="x_279645_employeem">24a4e0804f863700acdff82ca310c7cc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="EmployeeManagement">24a4e0804f863700acdff82ca310c7cc</sys_scope>
+        <sys_update_name>sys_ui_application_c1a0b15a4f0ab300acdff82ca310c75f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-06-17 08:51:21</sys_updated_on>
+    </sys_ui_application>
+</record_update>

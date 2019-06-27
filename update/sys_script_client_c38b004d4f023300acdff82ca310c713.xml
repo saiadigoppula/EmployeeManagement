@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>u_employeefullname</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>NameValidationScript</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+	
+   var name = g_form.getValue('u_employeefullname');
+
+var pattern = /[^A-Za-z ]+$/;   // checks 
+
+if (pattern.test(name)) {
+	   g_form.showFieldMsg('u_employeefullname','Invalid Name','error');
+   }
+	else{
+		//	g_form.hideFieldMsg('u_employeefullname',true);
+		}
+   
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-06-13 04:19:19</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c38b004d4f023300acdff82ca310c713</sys_id>
+        <sys_mod_count>36</sys_mod_count>
+        <sys_name>NameValidationScript</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="EmployeeManagement" source="x_279645_employeem">24a4e0804f863700acdff82ca310c7cc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="EmployeeManagement">24a4e0804f863700acdff82ca310c7cc</sys_scope>
+        <sys_update_name>sys_script_client_c38b004d4f023300acdff82ca310c713</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-06-26 05:59:07</sys_updated_on>
+        <table>x_279645_employeem_employeedetails</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

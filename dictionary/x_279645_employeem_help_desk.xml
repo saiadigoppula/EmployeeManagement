@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Help Desk" max_length="40" name="x_279645_employeem_help_desk" type="collection">
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="hr" label="Department" max_length="40" name="u_department" type="string">
+            <choice>
+                <element inactive_on_update="false" label="HR" sequence="0" value="hr"/>
+                <element inactive_on_update="false" label="MIS" sequence="1" value="mis"/>
+                <element inactive_on_update="false" label="FINANCE" sequence="2" value="finance"/>
+                <element inactive_on_update="false" label="QA" sequence="3" value="qa"/>
+                <element inactive_on_update="false" label="SYSADMIN" sequence="4" value="sysadmin"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Email" max_length="40" name="u_email" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="EmpID" max_length="40" name="u_empid" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Expected date to Resolve" max_length="40" name="u_expecteddate" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="1" label="Priority" max_length="40" name="u_priority" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Critical" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="High" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="Medium" sequence="2" value="3"/>
+                <element inactive_on_update="false" label="Low" sequence="3" value="4"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Raised by" max_length="40" name="u_raisedby" type="string"/>
+        <element default="5137153cc611227c000bbd1bd8cd2005" label="RequestManager" max_length="32" name="u_reference_1" read_only="true" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="certificates" label="Requested Type" max_length="40" name="u_requestedtype" type="string">
+            <choice>
+                <element inactive_on_update="false" label="certificates" sequence="0" value="certificates"/>
+                <element inactive_on_update="false" label="Group medical insurence" sequence="1" value="group_medical_insurence"/>
+                <element inactive_on_update="false" label="Payments" sequence="2" value="payments"/>
+                <element inactive_on_update="false" label="Travel Payments" sequence="3" value="travel_payments"/>
+                <element inactive_on_update="false" label="LMS" sequence="4" value="lms"/>
+                <element inactive_on_update="false" label="sales" sequence="5" value="sales"/>
+                <element inactive_on_update="false" label="Marketing" sequence="6" value="marketing"/>
+                <element inactive_on_update="false" label="Hardware" sequence="7" value="hardware"/>
+                <element inactive_on_update="false" label="software" sequence="8" value="software"/>
+                <element inactive_on_update="false" label="DataBase" sequence="9" value="database"/>
+                <element inactive_on_update="false" label="Reporting" sequence="10" value="reporting"/>
+                <element inactive_on_update="false" label="Trainings" sequence="11" value="trainings"/>
+                <element inactive_on_update="false" label="others" sequence="12" value="others"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="requested" label="Status" max_length="40" name="u_status" read_only="true" type="string">
+            <choice>
+                <element inactive="true" inactive_on_update="true" label="Close Complete" sequence="0" value="close_complete"/>
+                <element inactive="true" inactive_on_update="true" label="New" sequence="0" value="new"/>
+                <element inactive_on_update="false" label="Requested" sequence="0" value="requested"/>
+                <element inactive_on_update="false" label="Rejected" sequence="1" value="rejected"/>
+                <element inactive_on_update="false" label="Approved" sequence="2" value="approved"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="u_reference_1"/>
+        </index>
+        <index name="index2">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

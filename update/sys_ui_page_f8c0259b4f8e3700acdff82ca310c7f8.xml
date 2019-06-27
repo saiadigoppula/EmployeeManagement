@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script><![CDATA[function saveValues() {
+
+	
+
+       var fullname = document.getElementById("fullname").value;
+       var gmail = document.getElementById("gmail").value;
+		var dob = document.getElementById("dob").value;
+	var doj = document.getElementById("doj").value;
+	var phonenumber = document.getElementById("phonenumber").value;
+	var Male = document.getElementById("Male").value;
+	var Female = document.getElementById("Female").value;
+	var Other = document.getElementById("Other").value;
+
+
+		var test = new GlideRecord('x_279645_employeem_employeedetails');
+
+       test.initialize();
+
+
+       test.setValue('u_employeefullname', fullname);
+
+
+       test.setValue('u_email', gmail);
+		
+		 test.setValue('u_dateofbirth', dob);
+	test.setValue('u_dateofjoining', doj);
+	test.setValue('u_phonenumber', phonenumber);
+	
+	
+	if(document.getElementById("Other").checked)
+		{
+			test.setValue('u_choice_4',Other);
+		}
+	else if(document.getElementById("Female").checked)
+		{
+			test.setValue('u_choice_4',Female);
+		}
+	else
+		{
+			test.setValue('u_choice_4',Male);
+		}
+
+       test.insert();
+	
+
+	
+	  var fullname1 = document.getElementById("fullname").value='';
+	 var gmail1 = document.getElementById("gmail").value='';
+		var dob1 = document.getElementById("dob").value='mm/dd/yyyy';
+	var doj1 = document.getElementById("doj").value='mm/dd/yyyy';
+	var phonenumber1 = document.getElementById("phonenumber").value='';
+		alert("Record is inserted");
+	window.location.href="https://dev53451.service-now.com/x_279645_employeem_EmployeeManagement.do";
+}
+
+
+
+
+
+
+function validateForm() {
+  var fullname = document.getElementById("fullname").value;	 
+   var gmail = document.getElementById("gmail").value;
+	var dob = document.getElementById("dob").value;
+	var doj = document.getElementById("doj").value;
+	var phonenumber = document.getElementById("phonenumber").value;
+	var exp = /^\+?([6-9]{1})\)?[-. ]?([0-9]{5})[-. ]?([0-9]{4})$/; 
+
+
+  if (fullname =='') {
+    alert("Enter the correct Name");
+    return false;
+  }
+ else if(gmail ==''){
+  alert("Enter Valid Email");
+    return false;
+  }
+	else if(!exp.test(phonenumber)){
+		alert("Enter correct Phone NUmber");
+    return false;
+		
+	}
+	
+	else
+		{
+			saveValues();
+			
+		}
+}]]></client_script>
+        <description>This form is for new employee</description>
+        <direct>false</direct>
+        <endpoint>x_279645_employeem_NewEmployee.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+	<head>
+		
+<style>		
+	input[type=text],input[type=date]{
+  width: 200%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+	#myBtn{
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+	
+</style>
+</head>
+	
+<body>
+      <g:ui_form>  
+
+
+<table width="30%" bgcolor="0099CC" align="center">
+	<tr>
+<td><h2>  Employee Details</h2></td>
+</tr>
+	
+	
+	<tr>
+<td>Employee Full Name:</td>
+		<td><input type="text" name="fullname" id="fullname"></input></td>
+</tr>
+	
+	
+	<tr>
+<td>Gmail:</td>
+<td><input type="text" name="gmail" id="gmail" value = ""/></td>
+</tr>
+	
+		<tr>
+<td>Date Of Birth:</td>
+<td><input type="date" name="dob" id="dob"></input></td>
+</tr>
+	
+<tr>
+<td>Date Of Joinin:</td>
+<td><input type="date" name="doj" id="doj"></input></td>
+</tr>
+	
+<tr>
+<td>Phone Number:</td>
+<td><input type="text" name="phonenumber" id="phonenumber"></input></td>
+</tr>
+	
+	
+<tr>
+<td><h1>Gender</h1></td>
+</tr>
+<tr>
+	<td><input type="radio" name="gender" id="Male" value="Male"> Male </input></td>
+	</tr>
+	<tr>
+	<td><input type="radio" name="gender" id="Female" value="Female">FeMale </input></td>
+	</tr>
+	<tr>
+		<td><input type="radio" name="gender" id="Other" value="Other">Other</input></td>
+</tr>
+		
+ 
+	
+	<tr>  
+      <td><center><button id ="myBtn" onclick="validateForm()" type="button" >SubmitDetails</button></center></td>
+		</tr>
+		  </table>
+
+                </g:ui_form>
+	</body>
+
+</j:jelly>
+
+]]></html>
+        <name>NewEmployee</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-06-20 10:16:59</sys_created_on>
+        <sys_id>f8c0259b4f8e3700acdff82ca310c7f8</sys_id>
+        <sys_mod_count>118</sys_mod_count>
+        <sys_name>NewEmployee</sys_name>
+        <sys_package display_value="EmployeeManagement" source="x_279645_employeem">24a4e0804f863700acdff82ca310c7cc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="EmployeeManagement">24a4e0804f863700acdff82ca310c7cc</sys_scope>
+        <sys_update_name>sys_ui_page_f8c0259b4f8e3700acdff82ca310c7f8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-06-21 07:09:27</sys_updated_on>
+    </sys_ui_page>
+</record_update>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script/>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_279645_employeem_EmployeeManagement.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+	<head>
+		
+<style>		
+
+	#myBtn{
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+	
+</style>
+</head>
+	
+<body>
+      <g:ui_form>  
+
+
+<table width="30%" bgcolor="0099CC" align="center">
+	<tr>
+<td><h2>  Employee Management</h2></td>
+</tr>
+	
+	
+	<tr>
+<td><h3>LeaveManagement:</h3></td>
+		<td><center><button id ="myBtn" onclick="validateForm()" type="button" >LeaveManagement</button></center></td>
+</tr>
+	
+	
+	<tr>
+<td><h3>HelpDesk</h3></td>
+<td><center><button id ="myBtn" onclick="validateForm()" type="button" >HelpDesk</button></center>
+	</td>
+</tr>
+	
+		<tr>
+			<td><h3>Update Details</h3></td>
+<td><center><button id ="myBtn" onclick="validateForm()" type="button" >Update Details</button></center>
+	
+	</td>
+</tr>
+
+
+		  </table>
+
+                </g:ui_form>
+	</body>
+
+</j:jelly>
+
+]]></html>
+        <name>EmployeeManagement</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-06-21 06:53:53</sys_created_on>
+        <sys_id>1bbbb5274f4a7700acdff82ca310c7de</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>EmployeeManagement</sys_name>
+        <sys_package display_value="EmployeeManagement" source="x_279645_employeem">24a4e0804f863700acdff82ca310c7cc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="EmployeeManagement">24a4e0804f863700acdff82ca310c7cc</sys_scope>
+        <sys_update_name>sys_ui_page_1bbbb5274f4a7700acdff82ca310c7de</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-06-21 08:45:53</sys_updated_on>
+    </sys_ui_page>
+</record_update>
